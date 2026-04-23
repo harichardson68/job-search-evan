@@ -47,7 +47,9 @@ DECISION_MAP = {
     "salary too low":           "salary_too_low",
     "not interested":           "not_interested",
     "already seen / duplicate": "already_seen",
+    "already seen":             "already_seen",
     "search page listing":      "search_page",
+    "search page":              "search_page",
     "not in united states":     "not_in_us",
     "other":                    "other",
 }
@@ -95,7 +97,8 @@ def read_google_sheet():
             return decisions
 
         print(f"   Found {len(rows)-1} total submission(s) in sheet")
-        today_fmt = datetime.now().strftime("%m/%d/%Y")
+        # Handle M/D/YYYY format that Google Sheets uses
+        today_fmt = f"{datetime.now().month}/{datetime.now().day}/{datetime.now().year}"
 
         for row in rows[1:]:
             if len(row) < 3:
