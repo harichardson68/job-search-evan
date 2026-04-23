@@ -68,7 +68,7 @@ DEBUG_MODE       = True
 MAX_AGE_HOURS    = 72    # 3 days
 MAX_JOBS_EMAIL   = 10
 SEEN_JOBS_FILE   = "evan_seen_jobs.json"
-GENERATE_COVER_LETTERS = False  # Enabled
+GENERATE_COVER_LETTERS = True  # Enabled
 
 # Email config
 SMTP_EMAIL    = os.environ.get("SMTP_EMAIL", "")
