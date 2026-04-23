@@ -40,15 +40,16 @@ BACKUP_FILE     = os.path.join(SCRIPT_DIR, "evan_job_search.py.bak")
 TODAY = date.today().isoformat()
 
 DECISION_MAP = {
-    "applied":              "applied",
-    "bad link":             "bad_link",
-    "too senior":           "too_senior",
-    "salary too low":       "salary_too_low",
-    "not interested":       "not_interested",
-    "already seen":         "already_seen",
-    "search page":          "search_page",
-    "not in united states": "not_in_us",
-    "other":                "other",
+    "applied":                  "applied",
+    "bad link":                 "bad_link",
+    "onsite / not remote":      "onsite",
+    "too senior":               "too_senior",
+    "salary too low":           "salary_too_low",
+    "not interested":           "not_interested",
+    "already seen / duplicate": "already_seen",
+    "search page listing":      "search_page",
+    "not in united states":     "not_in_us",
+    "other":                    "other",
 }
 
 print(f"\n{'='*55}")
@@ -233,6 +234,16 @@ def apply_feedback(entries, weights):
                 if loc and loc not in weights["auto_blocked_locations"]:
                     weights["auto_blocked_locations"].append(loc)
                     auto_handled.append(f"Auto-blocked location: '{loc}'")
+
+        elif decision == "onsite":
+            weights["total_skipped"] += 1
+            if reason:
+                city = reason.lower().strip().rstrip(".")
+                if city and city not in weights.get("onsite_cities_seen", []):
+                    if "onsite_cities_seen" not in weights:
+                        weights["onsite_cities_seen"] = []
+                    weights["onsite_cities_seen"].append(city)
+                    auto_handled.append(f"Noted onsite city: '{city}'")
 
         elif decision == "other" and reason:
             reason_lower = reason.lower()
