@@ -1,0 +1,27 @@
+# Secrets — NEVER commit these
+.env
+google_credentials.json
+
+# Runtime output files
+evan_seen_jobs.json
+evan_job_decisions.json
+evan_today_jobs.json
+evan_scoring_weights.json
+evan_overnight_summary.json
+evan_job_search.log
+evan_job_search.py.bak
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+env/
+venv/
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# macOS
+.DS_Store

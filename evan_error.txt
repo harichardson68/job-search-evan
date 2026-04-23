@@ -1,0 +1,282 @@
+
+============================================================
+  Evan Richardson Job Search Run: 2026-04-16 14:47:42
+============================================================
+=======================================================
+  Evan Richardson - Cybersecurity Job Search
+  Targets: SOC, DFIR, Vuln Mgmt, MDR, Pen Test
+  Markets: Remote + KC Metro
+=======================================================
+[SEARCH] Searching RemoteOK...
+   [DEBUG] RemoteOK FILTERED-title: Banking Full Stack Software Developer TSCM 43657
+   [DEBUG] RemoteOK FILTERED-title: Director IT & Security
+   [DEBUG] RemoteOK FILTERED-title: Sr Software Engineer B E
+   [DEBUG] RemoteOK FILTERED-title: Product Manager Market Platform
+   [DEBUG] RemoteOK FILTERED-title: Senior Engineer Platform Devops
+   [DEBUG] RemoteOK FILTERED-title: Sr Sourcer GTM Leadership
+   [DEBUG] RemoteOK FILTERED-title: Senior Security Infrastructure Engineer
+   [DEBUG] RemoteOK FILTERED-title: E01 HR Compliance Specialist IV
+   [DEBUG] RemoteOK FILTERED-title: Senior Data Engineer
+   [DEBUG] RemoteOK FILTERED-title: Manager Product Development
+   [DEBUG] RemoteOK FILTERED-title: Staff Engineer Digital Lending
+   [DEBUG] RemoteOK FILTERED-title: Director of Security Engineering
+   [DEBUG] RemoteOK FILTERED-title: Sales Development Representative
+   [DEBUG] RemoteOK FILTERED-title: Payroll Operations and Systems Manager
+   [DEBUG] RemoteOK FILTERED-title: Associate Forward Deployed Engineer
+   [DEBUG] RemoteOK FILTERED-title: Internship Marketing Summer 2026
+   [DEBUG] RemoteOK FILTERED-title: Senior Software Engineer
+   [DEBUG] RemoteOK FILTERED-title: Trading Technology Engineer
+   [DEBUG] RemoteOK FILTERED-title: Software Engineer
+   [DEBUG] RemoteOK FILTERED-title: Data Analyst
+   [DEBUG] RemoteOK FILTERED-title: Biomedical Clinical Engineer Senior
+   [DEBUG] RemoteOK FILTERED-title: Product Security Manager
+   [DEBUG] RemoteOK FILTERED-title: Senior Security Engineer Automation
+   [DEBUG] RemoteOK FILTERED-title: Senior Software Engineer C++ Windows SDK WIN32 API
+   [DEBUG] RemoteOK FILTERED-title: Senior Manager Strategic Partner Marketing
+   [DEBUG] RemoteOK FILTERED-title: Mid Market Customer Account Manager
+   [DEBUG] RemoteOK FILTERED-title: Senior Accountant
+   [DEBUG] RemoteOK FILTERED-title: Purview Consultant
+   [DEBUG] RemoteOK FILTERED-title: Brand Designer
+   [DEBUG] RemoteOK FILTERED-title: Smart Contract Engineer SVM
+   [DEBUG] RemoteOK FILTERED-title: Accounting Clerk
+   [DEBUG] RemoteOK FILTERED-title: Forward Deployed Engineer VoIP
+   [DEBUG] RemoteOK FILTERED-title: Senior Staff Engineer Product Security
+   [DEBUG] RemoteOK FILTERED-title: Software Engineer Reliability
+   [DEBUG] RemoteOK FILTERED-title: SaaS Platform Architect
+   [DEBUG] RemoteOK FILTERED-title: Technical Account Manager
+   [DEBUG] RemoteOK FILTERED-title: DevOps Database Assistant Vice President
+   [DEBUG] RemoteOK FILTERED-title: Senior Sales Systems Engineer
+   [DEBUG] RemoteOK FILTERED-title: Senior Sales Engineer Data & AI Security
+   [DEBUG] RemoteOK FILTERED-title: Staff DevOps Engineer
+   [DEBUG] RemoteOK FILTERED-title: VP Corporate Marketing Brand & Communications
+   [DEBUG] RemoteOK FILTERED-title: Software Engineer New Grad Production Infrastructure
+   [DEBUG] RemoteOK FILTERED-title: Cloud Security Architect
+   [DEBUG] RemoteOK FILTERED-title: Staff Threat Intelligence Researcher
+   [DEBUG] RemoteOK FILTERED-title: Security Intern
+   [DEBUG] RemoteOK FILTERED-title: Senior Software Engineer Python Django PostgreSQL and Vue.js
+   [DEBUG] RemoteOK FILTERED-title: Product Operations Lead
+   [DEBUG] RemoteOK FILTERED-title: Cloud Systems Engineer
+   [DEBUG] RemoteOK FILTERED-title: Senior DevOps Engineer
+   [DEBUG] RemoteOK FILTERED-title: Senior Software Engineer React
+   [DEBUG] RemoteOK FILTERED-title: Communications Manager
+   [DEBUG] RemoteOK FILTERED-title: DevOps Engineer
+   [DEBUG] RemoteOK FILTERED-title: VP Data and Analytics
+   [DEBUG] RemoteOK FILTERED-title: Senior Open Source Intelligence Analyst
+   [DEBUG] RemoteOK FILTERED-title: Cloud Architect
+   [DEBUG] RemoteOK FILTERED-title: Channel Manager Team Lead United States
+   [DEBUG] RemoteOK FILTERED-title: Program Manager
+   [DEBUG] RemoteOK FILTERED-title: Middle Project Manager Internal Systems and Processes
+   [DEBUG] RemoteOK FILTERED-title: Early Career Software Engineer Warfighter Systems
+   [DEBUG] RemoteOK FILTERED-title: Growth Engineer
+   [DEBUG] RemoteOK FILTERED-title: Senior Security Engineer
+   [DEBUG] RemoteOK FILTERED-title: Senior User Experience Designer
+   [DEBUG] RemoteOK FILTERED-title: Senior Database Reliability Engineer
+   [DEBUG] RemoteOK FILTERED-title: Senior Product Manager
+   [DEBUG] RemoteOK FILTERED-title: Senior Solutions Engineer North East
+   [DEBUG] RemoteOK FILTERED-title: Regional Account Executive
+   [DEBUG] RemoteOK FILTERED-title: Corporate Paralegal
+   [DEBUG] RemoteOK FILTERED-title: IT Officer
+   [DEBUG] RemoteOK FILTERED-title: Administrative Business Partner
+   [DEBUG] RemoteOK FILTERED-title: Senior Security Engineer
+   [DEBUG] RemoteOK FILTERED-title: DevOps Engineer
+   [DEBUG] RemoteOK FILTERED-title: Mid Level DevOps Engineer CI CD Optimization
+   [DEBUG] RemoteOK FILTERED-title: Director Asset Protection NAM Retail
+   [DEBUG] RemoteOK FILTERED-title: Security Specialist
+   [DEBUG] RemoteOK FILTERED-title: Project Coordinator
+   [DEBUG] RemoteOK FILTERED-title: Regional Account Executive
+   [DEBUG] RemoteOK FILTERED-score: Product & Application Security Engineer
+   [DEBUG] RemoteOK FILTERED-title: Field Marketing Manager
+   [DEBUG] RemoteOK FILTERED-title: Manager Paid Social and Digital Acquisition
+   [DEBUG] RemoteOK FILTERED-title: Director of Product Marketing
+   [DEBUG] RemoteOK FILTERED-title: Associate Director Adobe Target
+   [DEBUG] RemoteOK FILTERED-title: Enterprise Account Executive Pacific NW
+   [DEBUG] RemoteOK FILTERED-title: Marketing Campaign Operations Associate
+   [DEBUG] RemoteOK FILTERED-title: Inside Sales Representative Retention
+   [DEBUG] RemoteOK FILTERED-title: Employee Relations &amp; Compliance Specialist
+   [DEBUG] RemoteOK FILTERED-title: Global Graphic Designer
+   [DEBUG] RemoteOK FILTERED-title: Manager Software Engineering
+   [DEBUG] RemoteOK FILTERED-title: Cloud Engineer
+   [DEBUG] RemoteOK FILTERED-title: Security Access Management Lead
+   [DEBUG] RemoteOK FILTERED-title: Integrated Marketing Manager
+   [OK] RemoteOK: 0 relevant jobs found
+[SEARCH] Searching Google Jobs via Serper...
+   [DEBUG] Serper 'SOC analyst remote entry level': 0 jobs, 10 organic, status 200
+   [DEBUG] Serper FILTERED-searchpage: Flexible Entry Level Remote Soc Analyst Jobs - Ind
+   [DEBUG] Serper FILTERED-searchpage: Level 1 Soc Analyst jobs in Remote - Indeed
+   [DEBUG] Serper FILTERED-searchpage: Remote Soc Analyst Jobs (NOW HIRING) - ZipRecruite
+   [DEBUG] Serper FILTERED-searchpage: 542 soc analyst Jobs in Remote, April 2026 | Glass
+   [DEBUG] Serper FILTERED-searchpage: $65k-$138k Soc Analyst No Experience Remote Jobs (
+   [DEBUG] Serper FILTERED-searchpage: Flexible Remote Soc Analyst Jobs - Indeed
+   [DEBUG] Serper FILTERED-searchpage: soc analyst jobs in remote | Dice.com
+   [DEBUG] Serper 'security operations center analyst remote': 0 jobs, 10 organic, status 200
+   [DEBUG] Serper FILTERED-searchpage: Flexible Remote Soc Analyst Jobs - Indeed
+   [DEBUG] Serper FILTERED-searchpage: Remote Soc Analyst Jobs (NOW HIRING) - ZipRecruite
+   [DEBUG] Serper FILTERED-searchpage: Security Operation Analyst Remote jobs - Indeed
+   [DEBUG] Serper FILTERED-searchpage: 179 security operations center analyst Jobs in Rem
+   [DEBUG] Serper FILTERED-searchpage: soc analyst jobs in remote | Dice.com
+   [DEBUG] Serper FILTERED-searchpage: Remote Soc Analyst Jobs in Texas (NOW HIRING) - Zi
+   [DEBUG] Serper FILTERED-searchpage: Remote Soc Analyst jobs in Dallas, Tx - Indeed
+   [DEBUG] Serper 'tier 1 SOC analyst remote': 0 jobs, 10 organic, status 200
+   [DEBUG] Serper FILTERED-searchpage: Level 1 Soc Analyst jobs in Remote - Indeed
+   [DEBUG] Serper FILTERED-searchpage: Remote Soc Analyst Jobs (NOW HIRING) - ZipRecruite
+   [DEBUG] Serper FILTERED-searchpage: soc analyst jobs in remote | Dice.com
+   [DEBUG] Serper FILTERED-searchpage: Soc Analyst Tier 1 jobs in Remote - Indeed
+   [DEBUG] Serper FILTERED-searchpage: 96 Soc analyst tier 1 jobs in United States | Glas
+   [DEBUG] Serper FILTERED-searchpage: Remote Soc Analyst Tier 1 Jobs (NOW HIRING) - ZipR
+   [DEBUG] Serper 'MDR analyst remote': 0 jobs, 10 organic, status 200
+   [DEBUG] Serper FILTERED-searchpage: Mdr analyst jobs in Remote - Indeed
+   [DEBUG] Serper FILTERED-searchpage: Mdr Analyst Jobs in California (NOW HIRING) - ZipR
+   [DEBUG] Serper FILTERED-searchpage: Mdr Analyst Jobs, Employment | Indeed
+   [DEBUG] Serper FILTERED-searchpage: 14 jobs - Search Jobs | The Muse
+   [DEBUG] Serper 'cybersecurity analyst remote entry level': 0 jobs, 10 organic, status 200
+   [DEBUG] Serper FILTERED-searchpage: Cyber Security Entry Level jobs in Remote - Indeed
+   [DEBUG] Serper FILTERED-searchpage: Entry Level Cyber Security Analyst Jobs (NOW HIRIN
+   [DEBUG] Serper FILTERED-searchpage: Entry Level Cyber Security Analyst jobs in Remote 
+   [DEBUG] Serper FILTERED-searchpage: Top 52 Entry Level Cyber Security Jobs in Remote -
+   [DEBUG] Serper FILTERED-searchpage: 267 cyber security analyst Jobs in Remote, April 2
+   [DEBUG] Serper 'information security analyst remote': 0 jobs, 10 organic, status 200
+   [DEBUG] Serper FILTERED-searchpage: Information Security Analyst Remote Work jobs - In
+   [DEBUG] Serper FILTERED-searchpage: Remote Cyber Security Analyst Jobs (NOW HIRING) - 
+   [DEBUG] Serper FILTERED-searchpage: soc analyst jobs in remote | Dice.com
+   [DEBUG] Serper FILTERED-searchpage: 267 cyber security analyst Jobs in Remote, April 2
+   [DEBUG] Serper 'junior cybersecurity analyst remote': 0 jobs, 10 organic, status 200
+   [DEBUG] Serper FILTERED-searchpage: Remote junior cyber security jobs - Indeed
+   [DEBUG] Serper FILTERED-searchpage: Remote junior cyber security analyst jobs - Indeed
+   [DEBUG] Serper FILTERED-searchpage: Junior Security Analyst Remote Jobs (NOW HIRING) -
+   [DEBUG] Serper FILTERED-searchpage: 21 junior cyber security analyst Jobs in Remote, A
+   [DEBUG] Serper FILTERED-searchpage: $23-$99/hr Junior Cyber Security Analyst Jobs (NOW
+   [DEBUG] Serper FILTERED-searchpage: Flexible Junior Security Analyst Remote Jobs - Ind
+   [DEBUG] Serper 'vulnerability management analyst remote': 0 jobs, 10 organic, status 200
+   [DEBUG] Serper FILTERED-searchpage: Flexible Remote Vulnerability Analyst Jobs - Indee
+   [DEBUG] Serper FILTERED-searchpage: $111k-$221k Remote Vulnerability Management Jobs (
+   [DEBUG] Serper FILTERED-searchpage: Remote vulnerability management jobs - Indeed
+   [DEBUG] Serper FILTERED-searchpage: 182 vulnerability analyst Jobs in Remote, April 20
+   [DEBUG] Serper 'vulnerability analyst remote entry level': 0 jobs, 10 organic, status 200
+   [DEBUG] Serper FILTERED-searchpage: Flexible Remote Vulnerability Analyst Jobs - Indee
+   [DEBUG] Serper FILTERED-searchpage: Entry Level Vulnerability Analyst Jobs, Employment
+   [DEBUG] Serper FILTERED-searchpage: 182 vulnerability analyst Jobs in Remote, April 20
+   [DEBUG] Serper FILTERED-searchpage: entry level vulnerability analyst jobs in remote -
+   [DEBUG] Serper FILTERED-searchpage: Entry Level Vulnerability Analyst Jobs (NOW HIRING
+   [DEBUG] Serper FILTERED-searchpage: Remote entry level vulnerability management jobs -
+   [DEBUG] Serper FILTERED-searchpage: $53k-$200k Vulnerability Analyst Jobs in Philadelp
+   [DEBUG] Serper 'incident response analyst remote': 0 jobs, 10 organic, status 200
+   [DEBUG] Serper FILTERED-searchpage: Incident Response Analyst jobs in Remote
+   [DEBUG] Serper FILTERED-searchpage: Remote Incident Response Jobs (NOW HIRING)
+   [DEBUG] Serper FILTERED-searchpage: Remote cyber incident response jobs
+   [DEBUG] Serper FILTERED-searchpage: 1995 incident response Jobs in Remote, April 2026
+   [DEBUG] Serper 'DFIR analyst remote entry level': 0 jobs, 10 organic, status 200
+   [DEBUG] Serper FILTERED-searchpage: $62k-$252k Remote Dfir Jobs (NOW HIRING) Apr 2026 
+   [DEBUG] Serper FILTERED-searchpage: Entry Level Digital Forensics Jobs, Employment - I
+   [DEBUG] Serper FILTERED-searchpage: 16 dfir Jobs in Remote, February 2026 | Glassdoor
+   [DEBUG] Serper FILTERED-searchpage: Flexible Remote Dfir Jobs - Indeed
+   [DEBUG] Serper FILTERED-searchpage: $89k-$216k Remote Digital Forensics Incident Respo
+   [DEBUG] Serper 'junior penetration tester remote': 0 jobs, 10 organic, status 200
+   [DEBUG] Serper FILTERED-searchpage: Junior remote penetration tester jobs - Indeed
+   [DEBUG] Serper FILTERED-searchpage: Junior Penetration Tester Jobs (NOW HIRING) - ZipR
+   [DEBUG] Serper FILTERED-searchpage: 19 penetration tester Jobs in Remote, April 2026 |
+   [DEBUG] Serper FILTERED-searchpage: $105k-$184k Junior Penetration Tester Jobs in New 
+   [DEBUG] Serper 'junior pen tester remote': 0 jobs, 10 organic, status 200
+   [DEBUG] Serper FILTERED-searchpage: Flexible Junior Remote Penetration Tester Jobs
+   [DEBUG] Serper FILTERED-searchpage: Junior Penetration Tester Jobs (NOW HIRING)
+   [DEBUG] Serper FILTERED-searchpage: 19 penetration tester Jobs in Remote, April 2026
+   [DEBUG] Serper FILTERED-searchpage: Flexible Junior Penetration Tester Remote Jobs
+   [DEBUG] Serper 'cybersecurity analyst Kansas City hybrid': 0 jobs, 10 organic, status 200
+   [DEBUG] Serper FILTERED-searchpage: Cyber Security Analyst jobs in Kansas City, Mo - I
+   [DEBUG] Serper FILTERED-searchpage: 49 Cyber Security Analyst jobs in Kansas City, Mis
+   [DEBUG] Serper FILTERED-searchpage: $76k-$210k Cyber Security Analyst Jobs in Kansas C
+   [DEBUG] Serper FILTERED-searchpage: Cybersecurity Analyst jobs in Kansas City, Ks - In
+   [DEBUG] Serper FILTERED-searchpage: 114 Remote Cybersecurity jobs in Kansas City Metro
+   [DEBUG] Serper FILTERED-searchpage: Hourly Remote Cyber Security Analyst Jobs in Kansa
+   [DEBUG] Serper FILTERED-searchpage: Remote Cyber Security jobs in Kansas City, Mo - In
+   [DEBUG] Serper FILTERED-searchpage: 15 Cyber security analyst jobs in Kansas City, MO 
+   [DEBUG] Serper FILTERED-searchpage: Best Cyber Security Jobs in Kansas City, MO 2026 |
+   [DEBUG] Serper FILTERED-searchpage: Full Time Cyber Security Analyst Jobs in Kansas Ci
+   [DEBUG] Serper 'SOC analyst Kansas City Missouri': 0 jobs, 10 organic, status 200
+   [DEBUG] Serper FILTERED-searchpage: Soc Analyst jobs in Kansas City, MO
+   [DEBUG] Serper FILTERED-searchpage: Soc Analyst Jobs in Kansas City, MO (NOW HIRING)
+   [DEBUG] Serper FILTERED-searchpage: 49 Cyber Security Analyst jobs in Kansas City, Mis
+   [DEBUG] Serper FILTERED-searchpage: 29 Security operations center analyst jobs in Kans
+   [DEBUG] Serper FILTERED-searchpage: Soc Analyst Jobs, Employment in Kansas City, MO
+   [DEBUG] Serper FILTERED-searchpage: soc analyst jobs in kansas city, mo
+   [DEBUG] Serper FILTERED-searchpage: Soc Analyst Tier 1 Jobs in Kansas City, MO (NOW HI
+   [DEBUG] Serper FILTERED-searchpage: Soc Analyst Jobs, Employment in Kansas City, MO
+   [DEBUG] Serper FILTERED-searchpage: 52 Security Analyst jobs in Kansas City, Missouri,
+   [DEBUG] Serper 'security analyst Lee's Summit Missouri': 0 jobs, 10 organic, status 200
+   [DEBUG] Serper FILTERED-searchpage: Cyber security analyst jobs in Lees Summit, MO
+   [DEBUG] Serper FILTERED-searchpage: Cyber Security Jobs, Employment in Lees Summit, MO
+   [DEBUG] Serper FILTERED-searchpage: Soc Analyst Jobs in Lee s Summit, MO (NOW HIRING)
+   [DEBUG] Serper FILTERED-searchpage: cyber security jobs in lees summit, mo
+   [DEBUG] Serper FILTERED-searchpage: Soc Analyst Jobs, Employment in Lee's Summit, MO
+   [DEBUG] Serper FILTERED-searchpage: Security Specialist jobs in Lees Summit, MO
+   [DEBUG] Serper 'cybersecurity analyst remote Missouri': 0 jobs, 10 organic, status 200
+   [DEBUG] Serper FILTERED-searchpage: Remote Cyber Security jobs in Kansas City, Mo - In
+   [DEBUG] Serper FILTERED-searchpage: Remote Cyber Security Jobs in Missouri (NOW HIRING
+   [DEBUG] Serper FILTERED-searchpage: Cyber Security Analyst Jobs, Employment in Missour
+   [DEBUG] Serper FILTERED-searchpage: Cybersecurity Remote jobs in St. Louis, Mo 63128 -
+   [DEBUG] Serper FILTERED-searchpage: $107k-$200k Remote Cyber Security Jobs in St Louis
+   [DEBUG] Serper FILTERED-searchpage: 49 Cyber Security Analyst jobs in Kansas City, Mis
+   [DEBUG] Serper FILTERED-searchpage: Cybersecurity Analyst Jobs, Employment in Missouri
+   [DEBUG] Serper 'splunk SOC analyst remote': 0 jobs, 10 organic, status 200
+   [DEBUG] Serper FILTERED-searchpage: Flexible *splunk Analyst Remote Jobs - Indeed
+   [DEBUG] Serper FILTERED-searchpage: Soc Analyst Tier 1 Splunk Jobs, Employment - Indee
+   [DEBUG] Serper FILTERED-searchpage: $69k-$350k Remote Soc Analyst Jobs in Sammamish, W
+   [DEBUG] Serper 'SIEM analyst remote entry level': 0 jobs, 10 organic, status 200
+   [DEBUG] Serper FILTERED-searchpage: Siem Analyst Entry Level Jobs, Employment - Indeed
+   [DEBUG] Serper FILTERED-searchpage: Siem Analyst Entry Level Jobs (NOW HIRING) - ZipRe
+   [DEBUG] Serper FILTERED-searchpage: Siem Entry Level Jobs, Employment - Indeed
+   [DEBUG] Serper FILTERED-searchpage: Siem Remote Jobs (NOW HIRING) - ZipRecruiter
+   [DEBUG] Serper 'threat analyst remote entry level': 0 jobs, 10 organic, status 200
+   [DEBUG] Serper FILTERED-searchpage: Entry Level Threat Analyst Jobs, Employment | Inde
+   [DEBUG] Serper FILTERED-searchpage: Remote Threat Intelligence Jobs (NOW HIRING) - Zip
+   [DEBUG] Serper FILTERED-searchpage: Flexible Threat Intelligence Remote Jobs - Indeed
+   [DEBUG] Serper FILTERED-searchpage: $94k-$168k Entry Level Remote Threat Intelligence 
+   [DEBUG] Serper FILTERED-searchpage: 198 cyber threat analyst Jobs in Remote, April 202
+   [DEBUG] Serper FILTERED-searchpage: Cyber Security Entry Level jobs in Remote - Indeed
+   [DEBUG] Serper FILTERED-searchpage: 20 Best entry level threat analyst jobs (Hiring No
+   [OK] Google Jobs: 44 relevant jobs found
+[SEARCH] Searching Dice...
+   [OK] Dice: 0 relevant jobs found
+[SEARCH] Searching USAJobs...
+   [DEBUG] USAJobs 'cybersecurity analyst': 0 raw results, status 200
+   [DEBUG] USAJobs 'SOC analyst': 0 raw results, status 200
+   [DEBUG] USAJobs 'information security': 6 raw results, status 200
+   [DEBUG] USAJobs 'security operations': 2 raw results, status 200
+   [DEBUG] USAJobs 'incident response': 0 raw results, status 200
+   [DEBUG] USAJobs 'vulnerability management': 0 raw results, status 200
+   [OK] USAJobs: 0 relevant jobs found
+[SEARCH] Searching Greenhouse...
+   [OK] Greenhouse: 0 relevant jobs found
+[SEARCH] Searching Lever...
+   [OK] Lever: 0 relevant jobs found
+[SEARCH] Searching Wellfound...
+   [OK] Wellfound: 2 relevant jobs found
+[SEARCH] Searching ClearanceJobs...
+   [OK] ClearanceJobs: 14 relevant jobs found
+
+[STATS] Raw jobs found before filtering: 60
+   [DEBUG] FILTERED-minscore: Operational Technology Security Engineer - Clearan [15pts]
+[OK] 1 jobs below min score 20 filtered out
+[OK] Removed 6 duplicate jobs already sent previously
+
+=======================================================
+[STATS] Total relevant jobs found: 49
+[STATS] Sending top 10 jobs to harichardson68@gmail.com
+=======================================================
+
+[STATS] Generating cover letters for 10 jobs...
+  [01] Score:130 | Google Jobs | Soc Analyst jobs in United States - LinkedIn
+  [02] Score:100 | Google Jobs | 26 Tier 1 Soc Analyst jobs in United States - Link
+  [03] Score:100 | Google Jobs | Vulnerability Management Analyst - US Federal - My
+  [04] Score:100 | Google Jobs | Vulnerability Management Analyst (Remote) - CrowdS
+  [05] Score:100 | Google Jobs | 1000+ Remote Incident Response jobs in United Stat
+  [06] Score:100 | Google Jobs | Incident Response Analyst Remote Jobs
+  [07] Score:100 | Google Jobs | Remote Incident Response Analyst Jobs
+  [08] Score:100 | Google Jobs | Incident Response Analyst - SkillBridge (Remote)
+  [09] Score:100 | Google Jobs | Junior Penetration Tester jobs in New York City Me
+  [10] Score:100 | Google Jobs | junior penetration tester remote, telecommute jobs
+
+[OK] Saved 10 job URLs to evan_seen_jobs.json
+
+   [EMAIL] Sent 10 jobs to harichardson68@gmail.com
+
+[DONE] Evan's job search completed at 2026-04-16 14:49:00
