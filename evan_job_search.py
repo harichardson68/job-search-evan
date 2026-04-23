@@ -1426,27 +1426,17 @@ def send_email(jobs):
         msg["From"]    = SMTP_EMAIL
         msg["To"]      = TARGET_EMAIL
 
-        # ── Decision guide ───────────────────────────────────────
-        decision_guide = """
+        # ── Decision guide + Google Form button ─────────────────
+        FORM_URL = "https://docs.google.com/forms/d/14_Jt5xRxZsjo3KgHM4V4wUuhGQ_soPQk8vFw8cVT9ds/viewform"
+        decision_guide = f"""
 <div style="background:#eaf3ff;border:1px solid #b5d4f4;border-radius:8px;padding:14px 18px;margin:16px 0 20px;">
-  <p style="margin:0 0 6px;font-weight:bold;color:#1a3a5c;font-size:13px;">HOW TO RESPOND — Reply to this email with job numbers and codes:</p>
-  <table style="font-size:12px;color:#333;border-collapse:collapse;">
-    <tr><td style="padding:2px 12px 2px 0;"><strong>1</strong></td><td>Applied</td>
-        <td style="padding:2px 12px 2px 16px;"><strong>5</strong></td><td>Not interested</td></tr>
-    <tr><td style="padding:2px 12px 2px 0;"><strong>2</strong></td><td>Bad link</td>
-        <td style="padding:2px 12px 2px 16px;"><strong>6</strong></td><td>Already seen</td></tr>
-    <tr><td style="padding:2px 12px 2px 0;"><strong>3</strong></td><td>Too senior</td>
-        <td style="padding:2px 12px 2px 16px;"><strong>7</strong></td><td>Search page / not a real job</td></tr>
-    <tr><td style="padding:2px 12px 2px 0;"><strong>4</strong></td><td>Salary too low</td>
-        <td style="padding:2px 12px 2px 16px;"><strong>8</strong></td><td>Other (add reason after code)</td></tr>
-  </table>
-  <p style="margin:8px 0 0;font-size:12px;color:#555;">
-    <strong>Example reply:</strong><br>
-    Job 1: 1<br>
-    Job 2: 3<br>
-    Job 4: 8 bad location - brussels<br>
-    <em>(Reply to some, all, or none — unanswered jobs are treated as neutral)</em>
+  <p style="margin:0 0 10px;font-weight:bold;color:#1a3a5c;font-size:13px;">SUBMIT YOUR DECISIONS</p>
+  <p style="margin:0 0 12px;">
+    <a href="{FORM_URL}" style="background:#1a3a5c;color:#fff;padding:10px 20px;border-radius:4px;text-decoration:none;font-size:13px;font-weight:bold;">Submit Job Decisions</a>
   </p>
+  <p style="margin:8px 0 6px;font-size:12px;color:#555;">Click the button above anytime before midnight to submit your decisions. You can submit one job at a time or all at once.</p>
+  <p style="margin:6px 0 4px;font-size:12px;color:#888;"><strong>Decision options:</strong> Applied &nbsp;|&nbsp; Bad Link &nbsp;|&nbsp; Too Senior &nbsp;|&nbsp; Salary Too Low &nbsp;|&nbsp; Not Interested &nbsp;|&nbsp; Already Seen &nbsp;|&nbsp; Search Page &nbsp;|&nbsp; Not in United States &nbsp;|&nbsp; Other</p>
+  <p style="margin:4px 0 0;font-size:11px;color:#aaa;"><em>Unanswered jobs are treated as neutral — no action taken.</em></p>
 </div>"""
 
         # ── Overnight summary ────────────────────────────────────
