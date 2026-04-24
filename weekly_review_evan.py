@@ -22,9 +22,10 @@ from dotenv import load_dotenv
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 load_dotenv(os.path.join(SCRIPT_DIR, ".env"))
 
-SMTP_EMAIL     = os.environ.get("SMTP_EMAIL", "")
-SMTP_PASSWORD    = os.environ.get("SMTP_PASSWORD", "")
-TARGET_EMAIL = os.environ.get("TARGET_EMAIL", "")
+SMTP_EMAIL        = os.environ.get("SMTP_EMAIL", "")
+SMTP_PASSWORD     = os.environ.get("SMTP_PASSWORD", "")
+TARGET_EMAIL      = os.environ.get("TARGET_EMAIL", "")
+REVIEW_EMAIL      = os.environ.get("REVIEW_EMAIL", TARGET_EMAIL)  # Weekly review goes to Hans, not Evan
 NEEDS_REVIEW_FILE = os.path.join(SCRIPT_DIR, "evan_needs_review.json")
 TODAY             = date.today().isoformat()
 
@@ -173,12 +174,12 @@ def send_weekly_email(html, total):
         msg = MIMEMultipart("alternative")
         msg["Subject"] = subject
         msg["From"]    = f"Job Search Weekly <{SMTP_EMAIL}>"
-        msg["To"]      = TARGET_EMAIL
+        msg["To"]      = REVIEW_EMAIL
         msg.attach(MIMEText(html, "html"))
         with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
             server.login(SMTP_EMAIL, SMTP_PASSWORD)
-            server.sendmail(SMTP_EMAIL, TARGET_EMAIL, msg.as_string())
-        print(f"[OK] Weekly review email sent to {TARGET_EMAIL}")
+            server.sendmail(SMTP_EMAIL, REVIEW_EMAIL, msg.as_string())
+        print(f"[OK] Weekly review email sent to {REVIEW_EMAIL}")
         return True
     except Exception as e:
         print(f"[ERROR] Email failed: {e}")
