@@ -30,12 +30,13 @@ SHEET_ID         = "16NA3xPpvdV3nh1-FdWsfjGxCZ0OnvvmBAg6P2PQaaJs"
 SHEET_RANGE      = "Form Responses 1!A:D"
 CREDENTIALS_FILE = os.path.join(SCRIPT_DIR, "google_credentials.json")
 
-DECISIONS_FILE  = os.path.join(SCRIPT_DIR, "evan_job_decisions.json")
-TODAY_JOBS_FILE = os.path.join(SCRIPT_DIR, "evan_today_jobs.json")
-WEIGHTS_FILE    = os.path.join(SCRIPT_DIR, "evan_scoring_weights.json")
-JOB_SEARCH_FILE = os.path.join(SCRIPT_DIR, "evan_job_search.py")
-SUMMARY_FILE    = os.path.join(SCRIPT_DIR, "evan_overnight_summary.json")
-BACKUP_FILE     = os.path.join(SCRIPT_DIR, "evan_job_search.py.bak")
+DECISIONS_FILE    = os.path.join(SCRIPT_DIR, "evan_job_decisions.json")
+TODAY_JOBS_FILE   = os.path.join(SCRIPT_DIR, "evan_today_jobs.json")
+WEIGHTS_FILE      = os.path.join(SCRIPT_DIR, "evan_scoring_weights.json")
+JOB_SEARCH_FILE   = os.path.join(SCRIPT_DIR, "evan_job_search.py")
+SUMMARY_FILE      = os.path.join(SCRIPT_DIR, "evan_overnight_summary.json")
+BACKUP_FILE       = os.path.join(SCRIPT_DIR, "evan_job_search.py.bak")
+NEEDS_REVIEW_FILE = os.path.join(SCRIPT_DIR, "evan_needs_review.json")
 
 TODAY = date.today().isoformat()
 
@@ -263,9 +264,42 @@ def apply_feedback(entries, weights):
                     weights["auto_blocked_companies"].append(co)
                     auto_handled.append(f"Auto-blocked company: '{co}'")
             else:
-                needs_review.append(f"Job '{entry.get('title','?')}': {reason}")
+                needs_review.append({
+                    "date":     TODAY,
+                    "job_id":   entry.get("job_id", ""),
+                    "title":    entry.get("title", ""),
+                    "company":  entry.get("company", ""),
+                    "track":    entry.get("track", ""),
+                    "url":      entry.get("url", ""),
+                    "decision": decision,
+                    "reason":   reason,
+                    "category": "other",
+                    "status":   "pending",
+                    "resolution": None,
+                })
 
     return auto_handled, needs_review
+
+
+def write_needs_review(needs_review_items):
+    """Append new needs_review items to evan_needs_review.json."""
+    if not needs_review_items:
+        return
+    try:
+        existing = {"items": []}
+        if os.path.exists(NEEDS_REVIEW_FILE):
+            with open(NEEDS_REVIEW_FILE, "r") as f:
+                existing = json.load(f)
+
+        existing["items"].extend(needs_review_items)
+        existing["last_updated"] = datetime.now().isoformat()
+        existing["pending_count"] = sum(1 for i in existing["items"] if i.get("status") == "pending")
+
+        with open(NEEDS_REVIEW_FILE, "w") as f:
+            json.dump(existing, f, indent=2)
+        print(f"[OK] Added {len(needs_review_items)} item(s) to evan_needs_review.json ({existing['pending_count']} total pending)")
+    except Exception as e:
+        print(f"[WARN] Could not write evan_needs_review.json: {e}")
 
 def patch_job_search(weights):
     if not os.path.exists(JOB_SEARCH_FILE):
@@ -383,6 +417,7 @@ def main():
 
     save_weights(weights)
     patch_job_search(weights)
+    write_needs_review(needs_review)
     git_committed = git_commit_push(auto_handled, needs_review)
     write_summary(entries, auto_handled, needs_review, git_committed)
 
