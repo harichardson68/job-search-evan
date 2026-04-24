@@ -166,20 +166,39 @@ def build_email(items, groups):
     return html
 
 def send_weekly_email(html, total):
-    """Send the weekly review email."""
-    subject = f"Weekly Job Search Review — {total} Item(s) to Review — {TODAY}"
+    """Send Evan's weekly review email with evan_needs_review.json attached."""
+    from email.mime.base import MIMEBase
+    from email import encoders
+
+    subject = f"Evan Weekly Job Search Review — {total} Item(s) to Review — {TODAY}"
     if total == 0:
-        subject = f"Weekly Job Search Review — Nothing to Review! — {TODAY}"
+        subject = f"Evan Weekly Job Search Review — Nothing to Review! — {TODAY}"
     try:
-        msg = MIMEMultipart("alternative")
+        msg = MIMEMultipart("mixed")
         msg["Subject"] = subject
         msg["From"]    = f"Job Search Weekly <{SMTP_EMAIL}>"
         msg["To"]      = REVIEW_EMAIL
+
+        # HTML body
         msg.attach(MIMEText(html, "html"))
+
+        # Attach evan_needs_review.json if it exists
+        if os.path.exists(NEEDS_REVIEW_FILE):
+            with open(NEEDS_REVIEW_FILE, "rb") as f:
+                attachment = MIMEBase("application", "octet-stream")
+                attachment.set_payload(f.read())
+            encoders.encode_base64(attachment)
+            attachment.add_header(
+                "Content-Disposition",
+                f"attachment; filename=evan_needs_review_{TODAY}.json"
+            )
+            msg.attach(attachment)
+            print(f"   [OK] Attached evan_needs_review_{TODAY}.json to email")
+
         with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
             server.login(SMTP_EMAIL, SMTP_PASSWORD)
             server.sendmail(SMTP_EMAIL, REVIEW_EMAIL, msg.as_string())
-        print(f"[OK] Weekly review email sent to {REVIEW_EMAIL}")
+        print(f"[OK] Evan weekly review email sent to {REVIEW_EMAIL}")
         return True
     except Exception as e:
         print(f"[ERROR] Email failed: {e}")
