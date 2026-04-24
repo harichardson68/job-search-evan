@@ -145,21 +145,20 @@ def build_email(items, groups):
             html += "</div>"
 
     # Suggested actions
+    # ── Data retention note ───────────────────────────────────
     html += f"""
-<div style="background:#fff8e1;border:1px solid #ffe082;border-radius:8px;padding:14px 18px;margin-top:8px;">
-  <p style="margin:0 0 8px;font-weight:bold;color:#856404;font-size:13px;">Suggested Actions</p>
-  <ul style="margin:0;padding-left:18px;font-size:12px;color:#555;line-height:1.8;">
-    <li>Upload this list to Claude and say <em>"Review my weekly needs_review items and suggest fixes"</em></li>
-    <li>Dead links → Claude can add domains to BLOCKED_JOB_SITES</li>
-    <li>Clearance jobs → Claude can improve clearance detection in filters</li>
-    <li>Onsite jobs → Claude can add cities to the onsite city block list</li>
-    <li>JMeter-only → scoring penalty is already applied; check if threshold needs adjusting</li>
-  </ul>
+<div style="background:#e8f5e9;border:1px solid #a5d6a7;border-radius:8px;padding:12px 16px;margin-top:8px;">
+  <p style="margin:0 0 4px;font-weight:bold;color:#1b5e20;font-size:12px;">Data Retention Note</p>
+  <p style="margin:0;font-size:11px;color:#2e7d32;">
+    <strong>evan_needs_review.json</strong> — cleared after this email (manual fix queue) ✓<br>
+    <strong>evan_job_decisions.json</strong> — NEVER cleared — permanent training dataset for future K-Means analysis<br>
+    <strong>K-Means milestone:</strong> After 4-6 weeks of decisions (~200+ entries), run analyze_decisions.py to discover hidden patterns
+  </p>
 </div>
 
-<hr style="margin:24px 0;border:none;border-top:1px solid #eee;"/>
+<hr style="margin:16px 0;border:none;border-top:1px solid #eee;"/>
 <p style="font-size:11px;color:#aaa;text-align:center;">
-  Evan Richardson Weekly Job Search Review &nbsp;·&nbsp; Generated {datetime.now().strftime('%Y-%m-%d %H:%M')} &nbsp;·&nbsp; Items cleared after send
+  Evan Richardson Weekly Job Search Review &nbsp;·&nbsp; Generated {datetime.now().strftime('%Y-%m-%d %H:%M')} &nbsp;·&nbsp; evan_needs_review.json cleared after send
 </p>
 </body></html>"""
 
