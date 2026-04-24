@@ -5,8 +5,8 @@ Runs every Monday at 10:00 AM via Windows Task Scheduler.
 
 - Reads evan_needs_review.json
 - Sends a formatted HTML email digest grouped by category
-- Clears all pending items from evan_needs_review.json after sending
-- Commits the cleared file to GitHub
+- Marks all pending items as "reviewed" in evan_needs_review.json after sending (data preserved)
+- Commits the updated file to GitHub
 """
 
 import os
@@ -79,7 +79,7 @@ def build_email(items, groups):
 
     html = f"""<html><body style="font-family:Arial,sans-serif;max-width:800px;margin:auto;color:#333;">
 <div style="background:#1F3864;color:white;padding:20px 24px;border-radius:8px 8px 0 0;margin-bottom:0;">
-  <h2 style="margin:0;font-size:20px;">Weekly Job Search Review</h2>
+  <h2 style="margin:0;font-size:20px;">Evan Weekly Job Search Review</h2>
   <p style="margin:6px 0 0;font-size:13px;opacity:0.85;">Week ending {TODAY} &nbsp;|&nbsp; {total} item(s) need your attention</p>
 </div>
 
@@ -87,7 +87,7 @@ def build_email(items, groups):
   <p style="margin:0;font-size:13px;color:#444;">
     These items were flagged during nightly processing and could not be auto-resolved.
     Review each one and bring patterns to Claude for code fixes.
-    <strong>After sending, this list will be cleared.</strong>
+    <strong>After sending, these items will be marked as reviewed (data is preserved).</strong>
   </p>
 </div>"""
 
@@ -144,13 +144,12 @@ def build_email(items, groups):
   </div>"""
             html += "</div>"
 
-    # Suggested actions
     # ── Data retention note ───────────────────────────────────
     html += f"""
 <div style="background:#e8f5e9;border:1px solid #a5d6a7;border-radius:8px;padding:12px 16px;margin-top:8px;">
   <p style="margin:0 0 4px;font-weight:bold;color:#1b5e20;font-size:12px;">Data Retention Note</p>
   <p style="margin:0;font-size:11px;color:#2e7d32;">
-    <strong>evan_needs_review.json</strong> — cleared after this email (manual fix queue) ✓<br>
+    <strong>evan_needs_review.json</strong> — items marked as reviewed after this email (data preserved) ✓<br>
     <strong>evan_job_decisions.json</strong> — NEVER cleared — permanent training dataset for future K-Means analysis<br>
     <strong>K-Means milestone:</strong> After 4-6 weeks of decisions (~200+ entries), run analyze_decisions.py to discover hidden patterns
   </p>
@@ -158,7 +157,7 @@ def build_email(items, groups):
 
 <hr style="margin:16px 0;border:none;border-top:1px solid #eee;"/>
 <p style="font-size:11px;color:#aaa;text-align:center;">
-  Evan Richardson Weekly Job Search Review &nbsp;·&nbsp; Generated {datetime.now().strftime('%Y-%m-%d %H:%M')} &nbsp;·&nbsp; evan_needs_review.json cleared after send
+  Evan Richardson Weekly Job Search Review &nbsp;·&nbsp; Generated {datetime.now().strftime('%Y-%m-%d %H:%M')} &nbsp;·&nbsp; evan_needs_review.json items marked as reviewed after send
 </p>
 </body></html>"""
 
@@ -222,16 +221,16 @@ def clear_needs_review():
         data["pending_count"] = 0
         with open(NEEDS_REVIEW_FILE, "w") as f:
             json.dump(data, f, indent=2)
-        print(f"[OK] Cleared {cleared} pending item(s) from evan_needs_review.json")
+        print(f"[OK] Marked {cleared} pending item(s) as reviewed in evan_needs_review.json")
     except Exception as e:
-        print(f"[WARN] Could not clear evan_needs_review.json: {e}")
+        print(f"[WARN] Could not update evan_needs_review.json: {e}")
 
 def git_commit_push():
-    """Commit and push the cleared evan_needs_review.json."""
-    print("[GIT] Committing weekly review clear...")
+    """Commit and push the updated evan_needs_review.json."""
+    print("[GIT] Committing weekly review update...")
     try:
         subprocess.run(["git", "add", "."], cwd=SCRIPT_DIR, check=True)
-        commit_msg = f"Weekly review sent and cleared — {TODAY}"
+        commit_msg = f"Evan weekly review sent — items marked reviewed — {TODAY}"
         result = subprocess.run(
             ["git", "commit", "-m", commit_msg],
             cwd=SCRIPT_DIR, capture_output=True, text=True
@@ -257,7 +256,7 @@ def main():
     sent = send_weekly_email(html, len(items))
 
     if sent:
-        # Clear pending items after successful send
+        # Mark pending items as reviewed after successful send
         clear_needs_review()
         git_commit_push()
 
